@@ -1,0 +1,145 @@
+[{
+  "_id": {
+    "$oid": "61a91e5df2e4219f8a6611da"
+  },
+  "title": "Spooks",
+  "price": 39.9,
+  "type": "Yara Hat",
+  "description": "Cosy hat with SPOOKS logo patch . The beanieis partially lined with soft fleece",
+  "image": "product_05.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61a92027f2e4219f8a6611dc"
+  },
+  "title": "Horze",
+  "price": 16.9,
+  "type": "Leona Women's Knitted Hat with Crystals",
+  "description": "The new Leona hat is soft and lined with cosy fleece. Subtle crystals add a luxurious touch. A faux fur pom pom looks wintery, and the silver metal bit detail completes the rider look.",
+  "image": "product_02.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61a9206cf2e4219f8a6611dd"
+  },
+  "title": "Pikeur",
+  "price": 39.95,
+  "type": "Braid Design Hat with Pompom",
+  "description": "imple hat with braid pattern and faux fur pompom.",
+  "image": "product_04.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61a920a6f2e4219f8a6611de"
+  },
+  "title": "Kentucky Horsewear",
+  "price": 24.99,
+  "type": "Glitter Beanie",
+  "description": "The Beanie glitter is super stylish and keeps you warm during winter. Choose your favorite color and shine all winter long. Matching glitter socks are available to complete your outfit.",
+  "image": "product_03.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61a920dcf2e4219f8a6611df"
+  },
+  "title": "Back on Track",
+  "price": 24,
+  "type": "Wollen Hat Kim",
+  "description": "Trendy woollen cap is perfect for cold days. The lining is made with Welltex® to stimulate blood flow and help keep your head warm.",
+  "image": "product_01.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61a92115f2e4219f8a6611e0"
+  },
+  "title": "Horze",
+  "price": 13.93,
+  "type": "Nanda Winter Hat",
+  "description": "The removable faux-fur pom pom means the Horze Nanda Winter hat can go from fun to serious in a snap. This tightly knitted hat is made from a soft yarn blend for warmth as well as stretch. Contrasting trendy colours make this hat a style winner!",
+  "image": "product_06.jpg",
+  "addedBy": "61b4ca1540f7cf1e7ab75267",
+  "creationDate": {
+    "$date": "2021-02-11T23:00:00Z"
+  },
+  "deleted": 0
+},{
+  "_id": {
+    "$oid": "61b4c5d452ac4d3ef7ad940a"
+  },
+  "title": "May's",
+  "price": 50,
+  "type": "Mayssem",
+  "description": "something",
+  "image": "product_07.jpg",
+  "addedBy": "61b3926419595755490e4b9f",
+  "creationDate": {
+    "$date": "2021-12-11T15:37:56.426Z"
+  },
+  "deleted": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61b4ca4b40f7cf1e7ab7526b"
+  },
+  "title": "May's",
+  "price": 30,
+  "type": "Mayssem",
+  "description": "    new arrival    ",
+  "image": "product_07.jpg",
+  "addedBy": "61b3926419595755490e4b9f",
+  "creationDate": {
+    "$date": "2021-12-11T15:56:59.999Z"
+  },
+  "deleted": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61b52011b393ea37e59853d1"
+  },
+  "title": "Bonnet",
+  "price": 70,
+  "type": "Laine",
+  "description": "  a handmae cap, buy it now!  ",
+  "image": "product_08.jpg",
+  "addedBy": "61b3926419595755490e4b9f",
+  "creationDate": {
+    "$date": "2021-12-11T22:02:57.397Z"
+  },
+  "deleted": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61b68409c89c8938ec9a1017"
+  },
+  "title": "Imperial Riding",
+  "price": 20,
+  "type": "IRH Chunky Beanie",
+  "description": "This beanie will keep you warm for sure! Chunky and fashionable oversized to make sure your ears will stay warm while riding. This must have accessory is outstanding and chic because of its sequences and pom-poms.",
+  "image": "1639351305299-336150_BL.jpeg",
+  "addedBy": "61b3926419595755490e4b9f",
+  "creationDate": {
+    "$date": "2021-12-12T23:21:45.345Z"
+  },
+  "deleted": 0,
+  "__v": 0
+}]
