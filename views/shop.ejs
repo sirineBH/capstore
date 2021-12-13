@@ -1,0 +1,62 @@
+<%- include('parts/header') %>
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>new arrivals</h4>
+                        <h2>sixteen products</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <% for(let cap of caps) {%>
+
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="/caps/<%= cap._id %>"><img src="images/<%= cap.image %>"
+                                                alt="/caps/<%= cap.title %>"></a>
+                                        <div class="down-content">
+                                            <a href="/caps/<%= cap._id %>">
+                                                <h4>
+                                                    <%= cap.title %>
+                                                </h4>
+                                            </a>
+                                            <h6>$<%= cap.price %>
+                                            </h6>
+                                            <p>
+                                                <%= cap.description %>
+                                            </p>
+                                            <ul class="stars">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                            <span>Reviews (24)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:2000px">
+            <%- include("parts/footer") %>
+        </div>

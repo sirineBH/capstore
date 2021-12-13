@@ -1,0 +1,62 @@
+<%- include('../parts/adminHeader') %>
+
+    <div class="container d-flex justify-content-center" style="  padding-top: 100px;">
+
+
+        <form method="POST" action="/admin/addCap" enctype="multipart/form-data">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" name="title">Tilte</label>
+                        <input type="text" name="title" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" name="type">Type</label>
+                        <input type="text" name="type" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" name="price">Price</label>
+                        <input type="number" name="price" class="form-control" min="1" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" name="description">Product description</label>
+                <textarea type="text" rows="2" name="description" class="form-control" minlength="5"
+                    maxlength="255"></textarea>
+            </div>
+
+            <!-- upload image -->
+            <div class="form-outline mb-4">
+                <label class="form-label" name="image">Product image</label>
+                <input type="file" class="form-control" name="image" accept=".jpeg, .png, .jpg">
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Add</button>
+
+            <% if(successMessage){ %>
+                <div class="alert alert-success">
+                    <%= successMessage %>
+                </div>
+                <% } %>
+
+                    <% if(failedMessage){ %>
+                        <div class="alert alert-danger">
+                            <%= failedMessage %>
+                        </div>
+                        <% } %>
+        </form>
+    </div>
+
+
+
+
+
+    <%- include('../parts/footer') %>
