@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const url = `mongodb+srv://infowiste:Infowiste2101@cluster.d9dgk.mongodb.net/store?retryWrites=true&w=majority`;
+const url = process.env.MONGODB_URI || `mongodb+srv://infowiste:Infowiste2101@cluster.d9dgk.mongodb.net/store?retryWrites=true&w=majority`;
 //const url = `mongodb://localhost:27017/store`
 
 const connectionParams = {

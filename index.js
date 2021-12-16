@@ -15,7 +15,7 @@ const server = express()
 const PORT = process.env.PORT || 3000;
 
 var store = new mongoDbStore({
-    uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/store',
+    uri: process.env.MONGODB_URI || 'mongodb+srv://infowiste:Infowiste2101@cluster.d9dgk.mongodb.net/store?retryWrites=true&w=majority',
     collection: "sessions"
 })
 
@@ -50,11 +50,11 @@ server.all("/updateCap", routerAdmin)
 
 
 if (process.env.NODE_ENV === 'production') {
-    server.use(express.static(path.join(__dirname, 'views')));
+    server.use(express.static(path.join(__dirname, 'assets')));
 
-    server.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'views', 'index.ejs'))
-    });
+    // server.get('*', (req, res) => {
+    //     res.sendFile(path.join(__dirname, 'views', 'index.ejs'))
+    // });
 }
 
 server.listen(PORT)
