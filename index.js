@@ -12,8 +12,10 @@ const routerContact = require("./routers/contact.router")
 const routerAbout = require("./routers/about.router")
 
 const server = express()
+const PORT = process.env.PORT || 3000;
+
 var store = new mongoDbStore({
-    uri: 'mongodb://localhost:27017/store',
+    uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/store',
     collection: "sessions"
 })
 
@@ -47,4 +49,12 @@ server.all("/deleteCap", routerAdmin)
 server.all("/updateCap", routerAdmin)
 
 
-server.listen(3000, () => console.log("server is running"))
+if (process.env.NODE_ENV === 'production') {
+    server.use(express.static(path.join(__dirname, 'views')));
+
+    server.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'views', 'index.ejs'))
+    });
+}
+
+server.listen(PORT)

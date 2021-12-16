@@ -19,7 +19,6 @@ exports.getLoginPage = (req, res, next) => {
 }
 
 exports.postLoginData = (req, res, next) => {
-    console.log("login")
     authModel.postLoginData(req.body.email, req.body.login)
         .then((id) => {
             req.session.user = id

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 const bcrypt = require("bcrypt")
+const cnx = require("../db")
 
 var schemaUser = mongoose.Schema({
     fname: String,
@@ -9,13 +10,13 @@ var schemaUser = mongoose.Schema({
 })
 
 var User = mongoose.model('users', schemaUser)
-var url = "mongodb://localhost:27017/store"
+//var url = "mongodb://localhost:27017/store"
 
 
 exports.postRegisterData = (fname, lname, email, login) => {
     return new Promise((resolve, reject) => {
 
-        mongoose.connect(url).then(() => {
+        cnx.dbConnect().then(() => {
             //check user exists
             return User.findOne({ "email": email })
         }).then((user) => {
@@ -50,7 +51,7 @@ exports.postRegisterData = (fname, lname, email, login) => {
 exports.postLoginData = (email, login) => {
     return new Promise((resolve, reject) => {
 
-        mongoose.connect(url).then(() => {
+        cnx.dbConnect().then(() => {
             return User.findOne({ "email": email })
         }).then((user) => {
             if (user) {
